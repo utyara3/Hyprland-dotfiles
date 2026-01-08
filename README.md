@@ -6,4 +6,4 @@
 
 ## Change Wallpaper (super + w)
 
-<video src="assets/wallpapers_change.mp4" width="320" height="240" controls></video>
+![change_wallpaper](assets/wallpapers_change.gif)
