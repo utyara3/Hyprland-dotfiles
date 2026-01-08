@@ -1,5 +1,7 @@
 *
 
+!assets/
+!assets/**/*
 !.gitignore
 !.gitattributes
 !README.md
