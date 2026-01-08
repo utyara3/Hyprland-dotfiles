@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!.gitattributes
+!README.md
+!install.sh
+!home/
+!home/**/*
+!config/
+!config/**/*

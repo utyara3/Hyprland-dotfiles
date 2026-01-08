@@ -1,0 +1,79 @@
+* {
+    font-family: "FiraCode", monospace;
+    font-size: 15px; /* ↑ Увеличил шрифт */
+    min-height: 0;
+}
+
+/* ОСНОВНАЯ ПАНЕЛЬ — ПРОЗРАЧНАЯ + БОЛЬШИЕ ОТСТУПЫ */
+window#waybar {
+    background: transparent;
+    margin: 12px 16px; /* ↑ Отступы: 12px сверху/снизу, 16px слева/справа */
+    padding: 0;
+}
+
+/* Контейнер внутри — тоже без фона */
+window > box {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* Группы модулей — без фона */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+    padding: 0 6px; /* небольшой внутренний отступ между группами */
+}
+
+/* === САМИ МОДУЛИ (квадратики) === */
+#workspaces,
+#cpu,
+#memory,
+#wireplumber,
+#clock,
+#network,
+#battery,
+#backlight,
+#tray,
+#custom-launcher,
+#custom-power,
+#language,
+#window {
+    background: rgba(20, 20, 20, 0.8); /* чуть темнее и менее прозрачный */
+    border-radius: 10px; /* скругление покруглее */
+    padding: 8px 14px;   /* ↑ больше внутреннего пространства */
+    margin: 10px 3px 0px;       /* отступ между блоками */
+    color: #e0def4;
+    font-weight: 500;    /* чуть жирнее для читаемости */
+}
+
+/* Рабочие столы */
+#workspaces button {
+    padding: 0 10px;
+    margin: 0 3px;
+    border-radius: 8px;
+    background: transparent;
+    color: #6e6c7e;
+}
+
+#workspaces button.visible { color: #89dceb; }
+#workspaces button.active {
+    color: #f5e0dc;
+    background: rgba(70, 70, 70, 0.5);
+}
+#workspaces button.urgent { color: #f38ba8; }
+
+/* Цвета */
+#cpu       { color: #f2cdcd; }
+#memory    { color: #fab387; }
+#wireplumber { color: #f9e2af; }
+#wireplumber.muted { color: #a6adc8; }
+#clock     { color: #94e2d5; }
+#network   { color: #cdd6f4; }
+#network.disabled { color: #f38ba8; }
+#battery   { color: #f5c2e7; }
+#backlight { color: #b4befe; }
+#window    { color: #f5e0dc; font-style: italic; }
+
+/* Убрано всё, что связано с cursor */
